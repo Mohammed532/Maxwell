@@ -1,0 +1,63 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for the background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a103d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a1a5e;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for the M letter -->
+    <linearGradient id="letterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E779C1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#58C7F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F806CC;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="iconGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)"/>
+  
+  <!-- Circuit board pattern in background - corners only -->
+  <g opacity="0.3" stroke="#58C7F3" stroke-width="2" fill="none">
+    <!-- Connection nodes in corners -->
+    <circle cx="40" cy="40" r="3" fill="#E779C1"/>
+    <circle cx="160" cy="40" r="3" fill="#F806CC"/>
+    <circle cx="40" cy="160" r="3" fill="#58C7F3"/>
+    <circle cx="160" cy="160" r="3" fill="#E779C1"/>
+    
+    <!-- Resistor symbol top left -->
+    <path d="M 30 40 L 32 37 L 34 43 L 36 37 L 38 43 L 40 37" stroke="#E779C1" stroke-width="2"/>
+    
+    <!-- Capacitor symbol top right -->
+    <g transform="translate(160, 30)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#F806CC" stroke-width="2"/>
+      <line x1="4" y1="0" x2="4" y2="8" stroke="#F806CC" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Large "M" letter -->
+  <text 
+    x="100" 
+    y="135" 
+    font-family="Arial, sans-serif" 
+    font-size="110" 
+    font-weight="bold" 
+    text-anchor="middle" 
+    fill="url(#letterGradient)" 
+    filter="url(#iconGlow)"
+  >
+    M
+  </text>
+  
+  <!-- Outer border glow -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="url(#letterGradient)" stroke-width="2" opacity="0.5"/>
+</svg>

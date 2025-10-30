@@ -1,0 +1,46 @@
+<svg viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg" style={{width: '600px', height: '150px'}}>
+<defs>
+<linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" style={{stopColor:'#E779C1',stopOpacity:1}} />
+<stop offset="50%" style={{stopColor:'#58C7F3',stopOpacity:1}} />
+<stop offset="100%" style={{stopColor:'#F806CC',stopOpacity:1}} />
+</linearGradient>
+<filter id="glow">
+<feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+<feMerge>
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+</defs>
+<g opacity="0.4" stroke="#58C7F3" strokeWidth="2" fill="none">
+<line x1="10" y1="75" x2="70" y2="75" strokeLinecap="round"/>
+<line x1="530" y1="75" x2="590" y2="75" strokeLinecap="round"/>
+<line x1="70" y1="75" x2="90" y2="50" strokeLinecap="round"/>
+<line x1="70" y1="75" x2="90" y2="100" strokeLinecap="round"/>
+<line x1="510" y1="50" x2="530" y2="75" strokeLinecap="round"/>
+<line x1="510" y1="100" x2="530" y2="75" strokeLinecap="round"/>
+<path d="M 70 75 L 75 70 L 80 80 L 85 70 L 90 80 L 95 70 L 100 75" stroke="#E779C1" strokeWidth="2.5"/>
+<path d="M 500 75 L 505 70 L 510 80 L 515 70 L 520 80 L 525 70 L 530 75" stroke="#E779C1" strokeWidth="2.5"/>
+<circle cx="70" cy="75" r="4" fill="#58C7F3"/>
+<circle cx="530" cy="75" r="4" fill="#58C7F3"/>
+<circle cx="90" cy="50" r="3" fill="#E779C1"/>
+<circle cx="90" cy="100" r="3" fill="#E779C1"/>
+<circle cx="510" cy="50" r="3" fill="#E779C1"/>
+<circle cx="510" cy="100" r="3" fill="#E779C1"/>
+</g>
+<text x="300" y="95" fontFamily="Arial, sans-serif" fontSize="72" fontWeight="bold" textAnchor="middle" fill="url(#textGradient)" filter="url(#glow)">
+Maxwell
+</text>
+<text x="300" y="120" fontFamily="Arial, sans-serif" fontSize="14" textAnchor="middle" fill="#58C7F3" opacity="0.9">
+Your Circuitry Companion
+</text>
+<g transform="translate(150, 110)" opacity="0.6">
+<circle cx="0" cy="0" r="1.5" fill="#E779C1"/>
+<line x1="-5" y1="0" x2="5" y2="0" stroke="#E779C1" strokeWidth="1"/>
+</g>
+<g transform="translate(450, 110)" opacity="0.6">
+<circle cx="0" cy="0" r="1.5" fill="#F806CC"/>
+<line x1="-5" y1="0" x2="5" y2="0" stroke="#F806CC" strokeWidth="1"/>
+</g>
+</svg>
