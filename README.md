@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="1334" src="https://github.com/Mohammed532/Maxwell/blob/main/maxwell/public/logo.svg" alt="Maxwell Logo">
+    <img width="1334" src="https://github.com/Mohammed532/Maxwell/blob/main/res/screenshots/logo.png" alt="Maxwell Logo">
 </p>
 
 <h1 align="center">Maxwell</h1>
