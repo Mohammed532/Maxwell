@@ -6,7 +6,6 @@
 
 Maxwell is a circuit theory study companion, essentially a “Photomath” for electrical circuits. Powered by NVIDIA’s Nemotron Nano VL Vision-Language Model (VLM), it assists Electrical Engineering students in analyzing hand-drawn circuits and calculating complex values such as equivalent resistance, power consumption, impedance, and more.
 
-![Maxwell Landing Page Screenshot](res/screenshots/landing_page.png)
 ![Maxwell Circuitry Upload Screenshot](res/screenshots/circuitry_upload.png)
 ![Maxwell Quiz Seenshot](res/screenshots/quiz_select.png)
 ![Maxwell Quiz Screenshot 2](res/screenshots/quiz_analysis.png)
